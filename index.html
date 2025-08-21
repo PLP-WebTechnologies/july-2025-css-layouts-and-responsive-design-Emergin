@@ -3,140 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Grid & Flex Layout</title>
+    <title>Responsive Grid & Flex Demo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Main Grid Container -->
-    <div class="page-grid">
+    <!-- Main page container using CSS Grid -->
+    <div class="page-container">
         
-        <!-- Header with Flexbox Navigation -->
+        <!-- Header Section: Flexbox for navigation layout -->
         <header class="header">
-            <div class="nav-container">
-                <div class="logo">WebDesign</div>
-                <nav class="nav">
-                    <a href="#" class="nav-link">Home</a>
-                    <a href="#" class="nav-link">About</a>
-                    <a href="#" class="nav-link">Services</a>
-                    <a href="#" class="nav-link">Contact</a>
+            <div class="header-content">
+                <div class="logo">ResponsiveDemo</div>
+                
+                <!-- Navigation using Flexbox -->
+                <nav class="navigation">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </nav>
-                <div class="header-buttons">
-                    <button class="btn btn-primary">Login</button>
-                    <button class="btn btn-secondary">Sign Up</button>
+                
+                <!-- Action buttons using Flexbox -->
+                <div class="header-actions">
+                    <button class="btn btn-outline">Login</button>
+                    <button class="btn btn-solid">Sign Up</button>
                 </div>
             </div>
         </header>
 
-        <!-- Hero Section with Flexbox Centering -->
+        <!-- Hero Section: Flexbox for perfect centering -->
         <section class="hero">
             <div class="hero-content">
-                <h1>Responsive Design Mastery</h1>
-                <p>Combining CSS Grid and Flexbox for perfect layouts on any device</p>
+                <h1 class="hero-title">Responsive Web Design</h1>
+                <p class="hero-subtitle">Mastering CSS Grid and Flexbox for modern layouts</p>
                 <div class="hero-buttons">
-                    <button class="btn btn-large">Get Started</button>
-                    <button class="btn btn-outline">Learn More</button>
+                    <button class="btn btn-large btn-solid">Get Started</button>
+                    <button class="btn btn-large btn-outline">Learn More</button>
                 </div>
             </div>
         </section>
 
-        <!-- Features Grid Section -->
+        <!-- Features Section: CSS Grid for card layout -->
         <section class="features">
-            <h2>Key Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Mobile First</h3>
-                    <p>Optimized for mobile devices with responsive breakpoints</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Fast Loading</h3>
-                    <p>Lightweight CSS with efficient layout systems</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Modern Design</h3>
-                    <p>Contemporary styling with smooth animations</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔧</div>
-                    <h3>Flexible Layout</h3>
-                    <p>CSS Grid and Flexbox working together seamlessly</p>
+            <div class="container">
+                <h2 class="section-title">Why Choose Our Approach?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Mobile First</h3>
+                        <p>Designed for mobile users first, then enhanced for larger screens</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Performance</h3>
+                        <p>Optimized CSS for fast loading and smooth interactions</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Modern Design</h3>
+                        <p>Contemporary aesthetics with clean, professional layouts</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔧</div>
+                        <h3>Maintainable</h3>
+                        <p>Well-structured, commented code that's easy to modify</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Content Area with Sidebar -->
-        <main class="content">
-            <article class="main-content">
-                <h2>Main Content Area</h2>
-                <p>This demonstrates how CSS Grid creates complex page layouts while Flexbox handles component alignment. The layout adapts perfectly across desktop, tablet, and mobile devices.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            </article>
-            
-            <aside class="sidebar">
-                <div class="widget">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#">CSS Grid Guide</a></li>
-                        <li><a href="#">Flexbox Tutorial</a></li>
-                        <li><a href="#">Responsive Design</a></li>
-                    </ul>
+        <!-- Main Content Area: Grid layout for content and sidebar -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-layout">
+                    <!-- Main content area -->
+                    <main class="main-content">
+                        <h2>Understanding Modern CSS Layouts</h2>
+                        <p>This page demonstrates how CSS Grid and Flexbox work together to create responsive, maintainable layouts. CSS Grid handles the overall page structure, while Flexbox manages component-level alignment and distribution.</p>
+                        <p>The responsive design adapts seamlessly across mobile, tablet, and desktop viewports using strategic breakpoints and flexible units.</p>
+                    </main>
+                    
+                    <!-- Sidebar with widgets -->
+                    <aside class="sidebar">
+                        <div class="widget">
+                            <h3>Quick Stats</h3>
+                            <div class="stat-list">
+                                <div class="stat-item">
+                                    <span class="stat-value">75%</span>
+                                    <span class="stat-label">Mobile Traffic</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">20%</span>
+                                    <span class="stat-label">Tablet Users</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">5%</span>
+                                    <span class="stat-label">Desktop Only</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="widget">
+                            <h3>Resources</h3>
+                            <ul class="resource-list">
+                                <li><a href="#" class="resource-link">CSS Grid Guide</a></li>
+                                <li><a href="#" class="resource-link">Flexbox Tutorial</a></li>
+                                <li><a href="#" class="resource-link">Responsive Design</a></li>
+                                <li><a href="#" class="resource-link">Performance Tips</a></li>
+                            </ul>
+                        </div>
+                    </aside>
                 </div>
-                <div class="widget">
-                    <h3>Stats</h3>
-                    <div class="stat-item">
-                        <span class="stat-number">65%</span>
-                        <span class="stat-label">Mobile Users</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">25%</span>
-                        <span class="stat-label">Tablet Users</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">10%</span>
-                        <span class="stat-label">Desktop Users</span>
-                    </div>
-                </div>
-            </aside>
-        </main>
+            </div>
+        </section>
 
-        <!-- Gallery Grid -->
+        <!-- Portfolio Gallery: Advanced CSS Grid -->
         <section class="gallery">
-            <h2>Portfolio Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item item-1">Project Alpha</div>
-                <div class="gallery-item item-2">Project Beta</div>
-                <div class="gallery-item item-3">Project Gamma</div>
-                <div class="gallery-item item-4">Project Delta</div>
-                <div class="gallery-item item-5">Project Echo</div>
-                <div class="gallery-item item-6">Project Foxtrot</div>
+            <div class="container">
+                <h2 class="section-title">Project Showcase</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item featured">Featured Project</div>
+                    <div class="gallery-item">E-commerce Site</div>
+                    <div class="gallery-item">Dashboard UI</div>
+                    <div class="gallery-item tall">Mobile App</div>
+                    <div class="gallery-item">Landing Page</div>
+                    <div class="gallery-item">Portfolio Site</div>
+                </div>
             </div>
         </section>
 
-        <!-- Footer with Flexbox Layout -->
+        <!-- Footer: Flexbox for layout distribution -->
         <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>About Us</h3>
-                    <p>Creating responsive web experiences with modern CSS techniques.</p>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>About</h4>
+                        <p>Demonstrating modern CSS layout techniques for responsive web design.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul class="footer-list">
+                            <li>Responsive Design</li>
+                            <li>CSS Architecture</li>
+                            <li>Performance Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p>Email: demo@responsive.com</p>
+                        <p>Phone: (555) 123-4567</p>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Services</h3>
-                    <ul>
-                        <li>Web Design</li>
-                        <li>Responsive Layouts</li>
-                        <li>CSS Optimization</li>
-                    </ul>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Responsive Demo. Built with Grid & Flexbox.</p>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>Email: ngangaephantus112@gmail.com</p>
-                    <p>Phone: 0110046012</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 WebDesign. Built with Grid & Flexbox.</p>
             </div>
         </footer>
         
